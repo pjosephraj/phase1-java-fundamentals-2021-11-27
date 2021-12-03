@@ -3,10 +3,11 @@ package com.simplilearn.methods;
 import java.util.Scanner;
 
 public class CalculatorDemo {
-  public static void main(String[] args) {
 
+  private static Scanner input;
+  public static void main(String[] args) {
     // Step 1. Collect input from user console
-    Scanner input = new Scanner(System.in);
+    input = new Scanner(System.in);
     System.out.println("---------------------------------");
     System.out.println(":: Calculator ::");
     System.out.println("---------------------------------");
@@ -19,11 +20,11 @@ public class CalculatorDemo {
 
     // Step 2. Call Arithmatic Calculator functon
     Calculator calculator = new Calculator();
-    System.out.println("X is " + x + " , Y is " + y + "And Addition: " + calculator.add(x, y));
-    System.out.println("X is " + x + " , Y is " + y + "And Substraction: " + calculator.sub(x, y));
-    System.out.println("X is " + x + " , Y is " + y + "And Multiplication: " + calculator.mul(x, y));
-    System.out.println("X is " + x + " , Y is " + y + "And Division: " + calculator.div(x, y));
-    System.out.println("X is " + x + " , Y is " + y + "And Average: " + calculator.avg(x, y));
+    System.out.println("X is " + x + " , Y is " + y + " And Addition: " + calculator.add(x, y));
+    System.out.println("X is " + x + " , Y is " + y + " And Substraction: " + calculator.sub(x, y));
+    System.out.println("X is " + x + " , Y is " + y + " And Multiplication: " + calculator.mul(x, y));
+    System.out.println("X is " + x + " , Y is " + y + " And Division: " + calculator.div(x, y));
+    System.out.println("X is " + x + " , Y is " + y + " And Average: " + calculator.avg(x, y));
 
   }
 }
