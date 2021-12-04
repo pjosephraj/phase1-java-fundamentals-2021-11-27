@@ -1,5 +1,7 @@
 package com.simplilearn.methods;
 
+import com.simplilearn.utils.UtilsDemo;
+
 public class MethodDemo {
 
   public static void main(String[] args) {
@@ -10,7 +12,7 @@ public class MethodDemo {
     md.displayAuthor("John Smith");
     md.displayDetails("John@gmail.com", "Book Author");
 
-    System.out.println("----------------------------");
+    UtilsDemo.printDL();
 
     Employee emp = new Employee(10001, 3274979.5, "John Smith");
     md.showEmployee(emp);

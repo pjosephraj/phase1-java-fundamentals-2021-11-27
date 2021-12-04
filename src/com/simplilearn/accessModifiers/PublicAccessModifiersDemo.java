@@ -5,14 +5,12 @@ import com.simplilearn.utils.UtilsDemo;
 public class PublicAccessModifiersDemo {
   public static void main(String[] args) {
 
-    UtilsDemo utilsDemo = new UtilsDemo();
-
     // Class Initialization
     Father father = new Father();
     System.out.println("The amount :: " + father.amount);
     System.out.println("The park :: " + father.park);
 
-    utilsDemo.printDL();
+    UtilsDemo.printDL();
 
     System.out.println("The amount : " + father.showAmount());
     System.out.println("The park : " + father.displayPark());

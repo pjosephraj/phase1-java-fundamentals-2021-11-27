@@ -6,15 +6,13 @@ import com.simplilearn.utils.UtilsDemo;
 public class ProtectedAccessModifiersDemo extends SuperHero {
   public static void main(String[] args) {
 
-    UtilsDemo utils = new UtilsDemo();
-
     // Same package class
     Hero hero = new Hero();
     System.out.println("The Power: " + hero.power);
     System.out.println("The Power: " + hero.showPower());
     hero.usePower();
 
-    utils.printDL();
+    UtilsDemo.printDL();
 
     // Outside package class
     SuperHero hero2 = new SuperHero();
@@ -22,9 +20,9 @@ public class ProtectedAccessModifiersDemo extends SuperHero {
     // hero2.power; 
     // usePower method not accessible
     // hero2.usePower(); 
-    hero2.showPower();
+    System.out.println("The Power: " + hero2.showPower());
 
-    utils.printDL();
+    UtilsDemo.printDL();
 
     // Protected properties and method with inheritance (extended SuperHero class).
     ProtectedAccessModifiersDemo pamd = new ProtectedAccessModifiersDemo();

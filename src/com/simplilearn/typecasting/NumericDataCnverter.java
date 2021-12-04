@@ -2,6 +2,8 @@ package com.simplilearn.typecasting;
 
 import java.util.Scanner;
 
+import com.simplilearn.utils.UtilsDemo;
+
 public class NumericDataCnverter {
 
 	private static Scanner input;
@@ -10,7 +12,8 @@ public class NumericDataCnverter {
 		// Step 1: Collect input number value from user.
 		
 		input = new Scanner(System.in);
-		System.out.println("-------------------------");
+		
+		UtilsDemo.printDL();
 		
 		int userInput = input.nextInt();
 		
@@ -24,7 +27,7 @@ public class NumericDataCnverter {
 		byte byteValue = (byte) userInput;
 		short shortValue = (short) userInput;
 		
-		System.out.println("-----------------------------");
+		UtilsDemo.printDL();
 		
 		System.out.println("Byte Value: " + byteValue);
 		System.out.println("Short Value: " + shortValue);

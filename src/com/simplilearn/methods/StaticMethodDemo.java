@@ -1,5 +1,7 @@
 package com.simplilearn.methods;
 
+import com.simplilearn.utils.UtilsDemo;
+
 public class StaticMethodDemo {
   // Method calling
 
@@ -8,7 +10,7 @@ public class StaticMethodDemo {
     StaticMethodDemo.displayAuthor("John Smith");
     StaticMethodDemo.displayDetails("John@gmail.com","Book Author");
 
-    System.out.println("----------------------------");
+    UtilsDemo.printDL();
 
     Employee emp = new Employee(1001, 5000.00, "John Smith");
     StaticMethodDemo.showEmployee(emp);

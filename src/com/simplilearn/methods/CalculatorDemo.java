@@ -2,15 +2,18 @@ package com.simplilearn.methods;
 
 import java.util.Scanner;
 
+import com.simplilearn.utils.UtilsDemo;
+
 public class CalculatorDemo {
 
   private static Scanner input;
   public static void main(String[] args) {
     // Step 1. Collect input from user console
     input = new Scanner(System.in);
-    System.out.println("---------------------------------");
+    UtilsDemo.printDL();
+    
     System.out.println(":: Calculator ::");
-    System.out.println("---------------------------------");
+    UtilsDemo.printDL();
 
     System.out.println(("::Enter a number 1 value::"));
     int x = input.nextInt();
